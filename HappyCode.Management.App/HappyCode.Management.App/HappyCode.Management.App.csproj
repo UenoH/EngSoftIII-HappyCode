@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC508E8D-2FC2-4A34-98AD-FA123E37C7FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HappyCode.Management.App</RootNamespace>
+    <AssemblyName>HappyCode.Management.App</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmTurmaConclusao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTurmaConclusao.Designer.cs">
+      <DependentUpon>FrmTurmaConclusao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmUsuario.Designer.cs">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmUsuarioEdicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmUsuarioEdicao.Designer.cs">
+      <DependentUpon>FrmUsuarioEdicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAulaPresAval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAulaPresAval.Designer.cs">
+      <DependentUpon>FrmAulaPresAval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAulaEdicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAulaEdicao.Designer.cs">
+      <DependentUpon>FrmAulaEdicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAula.Designer.cs">
+      <DependentUpon>FrmAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmMatricula.Designer.cs">
+      <DependentUpon>FrmMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmMatriculaEdicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmMatriculaEdicao.Designer.cs">
+      <DependentUpon>FrmMatriculaEdicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmTurma.Designer.cs">
+      <DependentUpon>FrmTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmTurmaEdicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmTurmaEdicao.Designer.cs">
+      <DependentUpon>FrmTurmaEdicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmCurso.Designer.cs">
+      <DependentUpon>FrmCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAluno.Designer.cs">
+      <DependentUpon>FrmAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmCursoEdicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmCursoEdicao.Designer.cs">
+      <DependentUpon>FrmCursoEdicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmProfessor.Designer.cs">
+      <DependentUpon>FrmProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmProfessorEdicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmProfessorEdicao.designer.cs">
+      <DependentUpon>FrmProfessorEdicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAlunoEdicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAlunoEdicao.designer.cs">
+      <DependentUpon>FrmAlunoEdicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmPrincipal.designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmTurmaDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmTurmaDia.Designer.cs">
+      <DependentUpon>FrmTurmaDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmUI.Designer.cs">
+      <DependentUpon>FrmUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmTurmaConclusao.resx">
+      <DependentUpon>FrmTurmaConclusao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmUsuarioEdicao.resx">
+      <DependentUpon>FrmUsuarioEdicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAulaPresAval.resx">
+      <DependentUpon>FrmAulaPresAval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAulaEdicao.resx">
+      <DependentUpon>FrmAulaEdicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAula.resx">
+      <DependentUpon>FrmAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmMatricula.resx">
+      <DependentUpon>FrmMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmMatriculaEdicao.resx">
+      <DependentUpon>FrmMatriculaEdicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmTurma.resx">
+      <DependentUpon>FrmTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmTurmaEdicao.resx">
+      <DependentUpon>FrmTurmaEdicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAluno.resx">
+      <DependentUpon>FrmAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmCurso.resx">
+      <DependentUpon>FrmCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmCursoEdicao.resx">
+      <DependentUpon>FrmCursoEdicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmProfessor.resx">
+      <DependentUpon>FrmProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmProfessorEdicao.resx">
+      <DependentUpon>FrmProfessorEdicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAlunoEdicao.resx">
+      <DependentUpon>FrmAlunoEdicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmTurmaDia.resx">
+      <DependentUpon>FrmTurmaDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmUI.resx">
+      <DependentUpon>FrmUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shutdown-White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shutdown-Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBG-Label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HappyCode.Management.Core\HappyCode.Management.Core.csproj">
+      <Project>{20DF5C43-5470-45EC-8942-0BEB29C24EFA}</Project>
+      <Name>HappyCode.Management.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="Resources\btnMatriculav2.png" />
+    <None Include="Resources\btnMatricula.png" />
+    <None Include="Resources\btnAdicionar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
